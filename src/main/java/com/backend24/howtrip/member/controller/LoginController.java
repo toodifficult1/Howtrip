@@ -1,0 +1,25 @@
+package com.backend24.howtrip.member.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+
+@Controller
+public class LoginController {
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+	
+	@RequestMapping(value = "/member/login.do", method = RequestMethod.GET)
+	public void loginPageGet() {
+		
+		logger.info("로그인 페이지 진입");
+	}
+	
+	@RequestMapping(value = "/member/join.do", method = RequestMethod.GET)
+	public void joinPageGet() {
+		
+		logger.info("회원가입 페이지 진입");
+	}
+}
