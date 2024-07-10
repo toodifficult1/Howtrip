@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class FindPwdController {
 	private static final Logger logger = LoggerFactory.getLogger(FindPwdController.class);
 	
-	@RequestMapping(value = "/member/find_pwd.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/member/findPwd.do", method = RequestMethod.GET)
 	public void findPwdPageGet() {
 		
 		logger.info("비밀번호 찾기 페이지 진입");

@@ -59,13 +59,13 @@ form {
     text-align: center;
 }
 
-#findForm {
+#findPwdForm {
     padding: 20px 24px;
     border: 1px solid #c6c6c6;
     border-radius: 6px 6px 6px 6px;
 }
 
-#findForm input {
+#findPwdForm input {
     width: 70%;
     height: 40px;
     padding: 0 10px;
@@ -77,7 +77,7 @@ form {
     background-color: #fff;
 }
 
-#findForm #pwd-find {
+#findPwdForm #pwd_find {
     margin-top: 10%;
     background-color: #8EFFA0;
 }
@@ -91,6 +91,7 @@ form {
     position: relative;
     display: inline-block;
     font-size: 14px;
+    
     line-height: 17px;
     margin-left: 30px;
     margin-right: 30px;
@@ -98,9 +99,25 @@ form {
 }
 
 .find_pwd_ul_wrap .join {
-    color: #000;
+	color: #000;
+}
+
+.find_pwd_ul_wrap .idfind {
+	color: #000;
 }
 
 .find_pwd_ul_wrap .login {
-    color: #000;
+	color: #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+

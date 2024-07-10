@@ -6,7 +6,7 @@
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/spring/root-context.xml</param-value>
+		<param-value>/WEB-INF/spring/action-mybatis.xml</param-value>
 	</context-param>
 	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
@@ -30,39 +30,6 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
-	<servlet>
-        <servlet-name>default</servlet-name>
-        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.js</url-pattern>
-        <url-pattern>*.css</url-pattern>
-        <url-pattern>*.jpg</url-pattern>
-        <url-pattern>*.gif</url-pattern>
-        <url-pattern>*.png</url-pattern>
-        <url-pattern>*.ico</url-pattern>
-        <url-pattern>*.swf</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>jsp</servlet-name>
-        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
-        <init-param>
-            <param-name>fork</param-name>
-            <param-value>false</param-value>
-        </init-param>
-        <load-on-startup>3</load-on-startup>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>jsp</servlet-name>
-        <url-pattern>*.jsp</url-pattern>
-        <url-pattern>*.jspx</url-pattern>
-    </servlet-mapping>
-
 	<!-- 한글깨짐 방지 -->
 	<filter>
 	    <filter-name>encodingFilter</filter-name>
@@ -80,4 +47,5 @@
 	    <filter-name>encodingFilter</filter-name>
 	    <url-pattern>/*</url-pattern>
 	 </filter-mapping>
+
 </web-app>

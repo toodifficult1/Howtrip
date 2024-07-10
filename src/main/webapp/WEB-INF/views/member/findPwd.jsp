@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
     isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextPath"  value="${pageContext.request.contextPath}"/>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,13 +27,13 @@
 
             <ul class = "find_pwd_ul_wrap">
                 <li>
-                    <a target = "_blank" href = "join.do" class = "join">회원가입</a>
+                    <a target = "_blank" href = "${contextPath}/member/joinForm.do" class = "join">회원가입</a>
                 </li>
                 <li>
-                	<a target = "_blank" href = "findId.do" class = "idfind">아이디 찾기</a>
+                	<a target = "_blank" href = "${contextPath}/member/findId.do" class = "idfind">아이디 찾기</a>
                 </li>              
                 <li>
-                    <a target="_blank" href="login.do" class = "login">로그인 하기</a>
+                    <a target="_blank" href="${contextPath}/member/loginForm.do" class = "login">로그인 하기</a>
                 </li>
             </ul>
         </div>

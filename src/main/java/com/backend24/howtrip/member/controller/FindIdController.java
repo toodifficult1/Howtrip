@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class FindIdController {
 	private static final Logger logger = LoggerFactory.getLogger(FindIdController.class);
 	
-	@RequestMapping(value = "/member/find_id.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/member/findId.do", method = RequestMethod.GET)
 	public void findIdPageGet() {
 		
 		logger.info("아이디 찾기 페이지 진입");
