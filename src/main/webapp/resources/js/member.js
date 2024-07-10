@@ -56,7 +56,12 @@ function join() {
 	if(formJoin.userPwCheck.value == "" || formJoin.userPwCheck.value == null){
 		alert("비밀번호 확인을 입력해 주세요.");
 		formJoin.userPwCheck.focus(); 
-	} else if (formJoin.name.value == "" || formJoin.name.value == null){
+	} else {
+		alert("비밀번호 확인");
+		return;
+	}
+	
+	if (formJoin.name.value == "" || formJoin.name.value == null){
 		alert("이름을 입력해 주세요.");
 		formJoin.name.focus();
 	} else if(formJoin.birth.value == "" || formJoin.birth.value == null) {
